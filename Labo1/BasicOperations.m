@@ -1,6 +1,11 @@
 %Author: Robbe De Groeve
 
-%Initialize the variables
+%Pre execution code
+clear all;
+close all;
+clc;
+
+%Initialize the instances
 V1 = 2;
 V2 = 1e2;
 V3 = 1e-2;

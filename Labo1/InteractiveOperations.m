@@ -1,15 +1,20 @@
 %Author: Robbe De Groeve
 
+%Pre execution operations
+clear all;
+close all;
+clc;
+
 %Generate 2 random 2x2 matrices
 M1 = randi([0, 100], 2);
 M2 = randi([0, 100], 2);
 
 
-%Multiply matrix M1 with a user defined number
+%Task 1: Multiply one of the matrices with a scalar entered by the user.
 %***************************************************************
 %User information
-disp("Multiply matrix M1 with a user defined number");
-disp("Press a key to continue");
+disp("Multiply matrix M1 with a user defined scalar");
+disp("Press a key to start");
 pause;
 
 %Get the user input
@@ -22,11 +27,11 @@ Out1 = M1*scalar;
 
 
 
-%Raise the values of matrix M1 to the power of 2
+%Task 2: Raise each element in one of the matrices to the second power.
 %***************************************************************
-%User information
-disp("Raise the values of matrix M1 to the power of 2");
-disp("Press a key to continue");
+%information
+disp("Raise the elements of matrix M1 to the power of 2");
+disp("Press a key to start");
 pause;
 
 %Raise M1 to the power of 2
@@ -34,11 +39,11 @@ Out2 = M1.^2;
 %***************************************************************
 
 
-%Perform a matrix multiplication, addition and subtraction with M1 and M2
+%Task 3: A matrix multiplication, addition and subtraction of the two matrices.
 %***************************************************************
-%User information
+%information
 disp("Perform a matrix multiplication, addition and subtraction with M1 and M2");
-disp("Press a key to continue");
+disp("Press a key to start");
 pause;
 
 %Matrix multiplication
@@ -52,18 +57,18 @@ Out5 = M1-M2;
 %***************************************************************
 
 
-%Multiply the matrices element by element and divide the two matrices
+%Task 4: An element by element multiplication and division of both matrices.
 %***************************************************************
-%User information
-disp("Multiply the matrices element by element and divide the two matrices");
-disp("Press a key to continue");
+%information
+disp("Perform an element by element multiplication and division of both matrices");
+disp("Press a key to start");
 pause;
 
 %Multiply element by element
 Out6 = M1.*M2;
 
-%Divide the matrices
-Out7 = M1/M2;
+%Divide element by element
+Out7 = M1./M2;
 %***************************************************************
 
 
