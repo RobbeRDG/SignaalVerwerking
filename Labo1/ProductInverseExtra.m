@@ -1,6 +1,11 @@
 %Author: Robbe De Groeve
-%Summary: test if the priciple (A*B)^-1 = M2^-1 * M1^-1 is true with a user
+%test if the priciple (A*B)^-1 = M2^-1 * M1^-1 is true with a user
 %defined size random matrix
+
+%Pre execution operations
+clear all;
+close all;
+clc;
 
 %Initialize the two matrices
 prompt = "Give size of the square matrix";

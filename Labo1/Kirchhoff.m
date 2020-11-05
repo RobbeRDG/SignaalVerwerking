@@ -1,5 +1,10 @@
 %Author: Robbe De Groeve
 
+%Pre execution operations
+clear all;
+close all;
+clc;
+
 %Initialize the components
 R1 = 10;
 R2 = 20;
@@ -12,13 +17,13 @@ V2 = 5;
 
 %Define the kirkhoff matrix
 KrirkhoffElements = [
-    (-R1/R2 - 1) (R1/R4) (-R1/R6);
-    1 (R3/R4 - 1) (-R3/R6);
-    0 1 (-R5/R6 - 1)];
+    ((-1/R1)+(-1/R2)+(-1/R3)) (1/R3) 0;
+    1/R3 ((-1/R3)+(-1/R4)) (-1/R6);
+    0 1/R5 ((-1/R5)+(-1/R6))];
 
 KirkhoffResults = [
-    (-V1 - (R1/R4)*V2);
-    (R3/R4)*V2;
+    (-V1/R1);
+    (-V2/R4);
     0];
 
 

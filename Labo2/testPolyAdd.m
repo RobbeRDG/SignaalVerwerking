@@ -1,5 +1,10 @@
 %Author: Robbe De Groeve
 
+%Pre execution operations
+clear all;
+close all;
+clc;
+
 %Initialize the two polynomes
 polyNome1 = [9 -2 -15 3 1];
 polyNome2 = [3 2];

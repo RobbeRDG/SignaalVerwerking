@@ -1,5 +1,11 @@
 %Author: Robbe De Groeve
 % test if the priciple (A*B)^-1 = M2^-1 * M1^-1 is true
+
+%Pre execution operations
+clear all;
+close all;
+clc;
+
 %Initialize the two matrices
 M1 = [2 2 3; 4 5 6; 7 8 9];
 M2 = [11 11 13; 14 15 16; 17 18 19];
