@@ -15,9 +15,3 @@ x(j)=cos(theta(j));
 y(j)=sin(theta(j));
 end
 tWithout = toc(startWith);
-
-%Run with vectorisation
-startWith = tic();
-x_vector = cos(theta);
-y_vector = sin(theta);
-tWith = toc(startWith);

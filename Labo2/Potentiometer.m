@@ -18,7 +18,7 @@ r =1000;
 
 %The voltage supply
 UI=10;
-%*************************************************************************
+
 
 
 %Solve the equations
@@ -31,7 +31,6 @@ urb1=UI*x*RB1./(r*(1-x).*x+RB1);
 urb2=UI*x*RB2./(r*(1-x).*x+RB2);
 urb3=UI*x*RB3./(r*(1-x).*x+RB3);
 urb4=UI*x*RB4./(r*(1-x).*x+RB4);
-%*************************************************************************
 
 
 %Plot the results
@@ -40,18 +39,15 @@ urb4=UI*x*RB4./(r*(1-x).*x+RB4);
 plot(x,urb1);
 hold on;
 plot(x,urb2);
-hold on;
 plot (x,urb3);
-hold on;
 plot (x,urb4);
 
 %Generate the legend
 title ('Potentiometer');
-xlabel('x');
-ylabel('U(RB)') ;
 legend ('U(RB1)','U(RB2)','U(RB3)','U(RB4)');
 legend('Location','northwest');
 grid on;
-hold off;
-%*************************************************************************
+xlabel('x');
+ylabel('U(RB)') ;
+
 
