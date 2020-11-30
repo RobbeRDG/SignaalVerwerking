@@ -23,8 +23,11 @@ jw = w*i;
 
 %Evaluate the denominator of the polynome over jw
 resp = polyval(noemer, jw);
+
+%Calculate the magnitude in dB
 mag = -20*log(abs(resp));
-phase = angle(resp);
+%Calculate the phase in degrees
+phase = unwrap(angle(resp)); %Use unwrap to make phase function continuous
 phasedeg = -phase*180/pi;
 
 
@@ -39,7 +42,10 @@ subplot(2,1,2)
 semilogx(w, phasedeg);
 grid on
 
-%Plot information
+%Figure information
+title('Bode diagram using custom function')
+xlabel('Frequency (rad/s)')
+ylabel('Phase (deg)')
 
 end
 
